@@ -135,4 +135,4 @@ def pre_request():
     g.ldap_cache = {}
 
 if __name__ == '__main__':
-    app.run(host='::', port=8080)
+    app.run(host=app.config['SERVER_ADDRESS'], port=app.config['SERVER_PORT'])
